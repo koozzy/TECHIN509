@@ -72,7 +72,12 @@ def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> Li
     return output_board
 
 
-modified_board = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
+modified_board1 = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
 
-for a in modified_board:
+for a in modified_board1:
+    print(a)
+
+modified_board2 = flood_fill(input_board=board, old=".", new="~", x=3, y=10)
+
+for a in modified_board1:
     print(a)
